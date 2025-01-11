@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising for [Friend's Name]</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script> <!-- External JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Fundraising for [Friend's Name]</h1>
+        <p>Help [Friend's Name] Recover from the California Wildfire</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#updates">Updates</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>[Friend's Name] was affected by the recent California wildfire. Your support will help with recovery efforts, rebuilding, and other urgent needs.</p>
+    </section>
+
+    <section id="about">
+        <h2>About the Fundraiser</h2>
+        <p>[Details about the situation, how the funds will be used, and any personal story you want to share.]</p>
+    </section>
+
+    <section id="donate">
+        <h2>Donate Now</h2>
+        <p>Your donation will make a difference in [Friend's Name]'s recovery. Please consider contributing.</p>
+        
+        <!-- PayPal donation button -->
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+            <input type="hidden" name="business" value="your-paypal-email@example.com">
+            <input type="hidden" name="item_name" value="Fundraising for [Friend's Name]">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="submit" value="Donate Now">
+        </form>
+    </section>
+
+    <section id="updates">
+        <h2>Updates</h2>
+        <p>Current progress towards our goal of $5000:</p>
+
+        <!-- Progress bar -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">$0 of $5000 raised</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fundraising for [Friend's Name]</p>
+    </footer>
+</body>
+</html>
