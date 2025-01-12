@@ -2,7 +2,7 @@
 const targetAmount = 500000;
 
 // Current donation amount (this will update with each donation)
-let currentAmount = 0;
+let currentAmount = 50000;
 
 // Image Carousel
 const images = [
@@ -40,3 +40,7 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     const menu = document.getElementById('menu');
     menu.classList.toggle('show');
 });
+// Example: Automatically add a donation amount for demonstration purposes
+// Replace this with your actual donation logic
+setTimeout(() => updateProgress(1000), 2000); // Simulate a $1000 donation after 2 seconds
+setTimeout(() => updateProgress(500), 5000);  // Simulate a $500 donation after 5 seconds
