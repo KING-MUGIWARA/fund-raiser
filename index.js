@@ -1,13 +1,13 @@
 // Target amount for the fundraiser
-const targetAmount = 5000;
+const targetAmount = 500000;
 
-// Donation amount (this will be updated with each donation, here it's just a static example)
+// Current donation amount (this will update with each donation)
 let currentAmount = 0;
 
 // Function to update the progress bar
 function updateProgress(amount) {
     currentAmount += amount;
-    if (currentAmount > targetAmount) currentAmount = targetAmount; // Don't exceed target
+    if (currentAmount > targetAmount) currentAmount = targetAmount; // Prevent exceeding the target
 
     const progressPercentage = (currentAmount / targetAmount) * 100;
     const progressBar = document.getElementById('progress-bar');
@@ -17,6 +17,13 @@ function updateProgress(amount) {
     progressText.innerText = `$${currentAmount} of $${targetAmount} raised`;
 }
 
-// Example: call the updateProgress function when a donation is made (here using a static amount)
-// Replace this with actual donation logic or callback after PayPal payment is completed
-// updateProgress(500);  // Example: $500 donation
+// // Example: Automatically add a donation amount for demonstration purposes
+// // Replace this with your actual donation logic
+// setTimeout(() => updateProgress(1000), 2000); // Simulate a $1000 donation after 2 seconds
+// setTimeout(() => updateProgress(500), 5000);  // Simulate a $500 donation after 5 seconds
+
+// Hamburger menu functionality
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+});
