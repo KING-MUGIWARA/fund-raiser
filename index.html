@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundraising for [Friend's Name]</title>
+    <title>Fundraising for Sam's avenue</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script> <!-- External JavaScript file -->
 </head>
 <body>
     <header>
-        <h1>Fundraising for [Friend's Name]</h1>
-        <p>Help [Friend's Name] Recover from the California Wildfire</p>
+        <h1>Fundraising for [Sam's avenue]</h1>
+        <p>Help [Sam's avenue] Recover from the California Wildfire</p>
     </header>
 
     <nav>
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#donate">Donate</a></li>
@@ -24,22 +29,35 @@
 
     <section id="home">
         <h2>Welcome</h2>
-        <p>[Friend's Name] was affected by the recent California wildfire. Your support will help with recovery efforts, rebuilding, and other urgent needs.</p>
+        <p>[Sam's avenue] was affected by the recent California wildfire. Your support will help with recovery efforts, rebuilding, and other urgent needs.</p>
     </section>
 
     <section id="about">
         <h2>About the Fundraiser</h2>
-        <p>[Details about the situation, how the funds will be used, and any personal story you want to share.]</p>
+        <p>[The Situation <br>
+        California has been struck by devastating wildfires, leaving thousands of families displaced, homes reduced to ash, and entire communities struggling to rebuild. These fires have consumed vast acres of land, destroyed essential infrastructure, and threatened lives and livelihoods, creating an urgent need for relief and recovery efforts.
+        
+        How the Funds Will Be Used <br>
+        Your generous contributions will directly support those affected by the wildfires in the following ways:<br>
+        
+        Emergency Aid: Providing food, water, and temporary shelter to evacuees.<br>
+        Rebuilding Efforts: Assisting families with resources to rebuild their homes and communities.<br>
+        Wildfire Prevention: Supporting initiatives that reduce wildfire risks through reforestation and improved land management.<br>
+        Emotional and Mental Health Services: Offering counseling and support to those traumatized by the fires.<br>
+        A Personal Story<br>
+        One of the hardest-hit areas is a small community where I have family ties. My cousin’s home, a place where our family gathered for holidays, is now nothing more than charred rubble. Despite the loss, they have remained resilient, volunteering to help neighbors who are also struggling. This spirit of unity inspires us to take action and provide hope for those who have lost so much.
+        
+        Together, we can make a difference. Your support will not only provide immediate relief but also help build a safer and stronger future for those affected by the California wildfires. Thank you for your kindness and generosity!]</p>
     </section>
 
     <section id="donate">
         <h2>Donate Now</h2>
-        <p>Your donation will make a difference in [Friend's Name]'s recovery. Please consider contributing.</p>
+        <p>Your donation will make a difference in [Sam's avenue]'s recovery. Please consider contributing.</p>
         
         <!-- PayPal donation button -->
         <form action="https://www.paypal.com/donate" method="post" target="_blank">
-            <input type="hidden" name="business" value="your-paypal-email@example.com">
-            <input type="hidden" name="item_name" value="Fundraising for [Friend's Name]">
+            <input type="hidden" name="business" value="kingmugiwara1610@gmail.com">
+            <input type="hidden" name="item_name" value="Fundraising for [Sam's avenue(carlifornia wildfire)]">
             <input type="hidden" name="currency_code" value="USD">
             <input type="submit" value="Donate Now">
         </form>
@@ -47,17 +65,17 @@
 
     <section id="updates">
         <h2>Updates</h2>
-        <p>Current progress towards our goal of $5000:</p>
+        <p>Current progress towards our goal of $500,000:</p>
 
         <!-- Progress bar -->
         <div id="progress-container">
             <div id="progress-bar"></div>
         </div>
-        <p id="progress-text">$0 of $5000 raised</p>
+        <p id="progress-text">$0 of $500,000 raised</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Fundraising for [Friend's Name]</p>
+        <p>&copy; 2025 Fundraising for [Sam's avenue]</p>
     </footer>
 </body>
 </html>
